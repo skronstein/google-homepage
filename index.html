@@ -1,0 +1,144 @@
+<head>
+ 	<meta charset="UTF-8">
+</head>
+
+<style>
+	#navbar {
+		text-align: left;
+		height: 80px;
+		display: flex;
+		flex-template-columns: 100px 100px 50% 100px 100px 50px 100px;
+		margin: 0px;
+	}
+	.navbar-text       {flex-basis: 100px; flex-grow: 0; position: relative; top: 5px;}
+	.navbar-text-long  {flex-basis: 150px; flex-grow: 0; position: relative; top: 5px;}
+	.navbar-whitespace {flex-basis: 20%;   flex-grow: 1;}
+	.navbar-button     {position: relative; top: 0px;}
+	.footer {
+		text-align: center;
+		height: 40px;
+		display: flex;
+		position: fixed;
+		width:100%;
+		background: #eee;
+		color: #777;
+	}
+	#footer1 {
+		flex-template-columns: 100px 50%;
+		bottom: 40px;
+	}
+	#footer2 {
+		flex-template-columns: 100px 100px 100px 50% 100px 100px 100px;
+		bottom: 0px;
+	}
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 250px;
+		margin-bottom: 20px;
+	}
+	input {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 500px;
+		border-style: solid;
+		border-color: #eee;
+		height: 44px;
+		border-radius: 22px;
+		margin-bottom: 20px;
+	}
+	body {
+		color: #999;
+		font-size: 10pt;
+		text-align: center;
+	}
+	.sign-in-button {
+		height: 20pt;
+		width: 75px;
+		border: solid 0px;
+		background: #57f;
+		color: white;
+		font-family: arial;
+	}
+	.search-buttons {
+		height: 25pt;
+		width: 140px;
+		border-style: solid;
+		border-radius: 3px;
+		margin-bottom: 20px;
+		background: linear-gradient(0deg, #ddd, #eee);
+	}
+	.search-buttons:hover {
+		height: 25pt;
+		width: 140px;
+		border: solid 1px;
+		margin-bottom: 20px;
+		background-color: #eee;
+		border-color: #ddd;
+	}
+	.search-buttons:focus {
+		height: 25pt;
+		width: 140px;
+		border: solid 1px;
+		margin-bottom: 20px;
+		background-color: #eee;
+		border-color: #77f;
+	}
+	table {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#advanced-search {
+		position: relative;
+		margin-top: -30px;
+		color: black;
+		font-size: 10pt;
+	}
+</style>
+
+
+<html>
+<body>
+	<div id="navbar">
+		<div class="navbar-text">About</div>
+		<div class="navbar-text">Store</div>
+		<div class="navbar-whitespace"></div>
+		<div class="navbar-text">Gmail</div>
+		<div class="navbar-text">Images</div>
+		<div class="navbar-text">More</div>
+		<div class="navbar-text navbar-button"><button class="sign-in-button"><b>Sign In</b></button></div>
+	</div>
+	<img src="googlelogo_color_272x92dp.png">
+	<table>
+		<tbody>
+			<tr>
+				<td width="25%"></td>
+				<td>
+					<input width=500px>
+				</td>
+				<td width="25%">
+					<div id="advanced-search"><a href="#">Advanced Search</a></div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<button class="search-buttons">Google Search</button>
+	<button class="search-buttons">I'm Feeling Lucky</button>
+	<br>Google offered in: Français
+	<div id="footer1" class="footer">
+		<div class="navbar-text">Canada</div>
+	</div>
+	<div id="footer2" class="footer">
+		<div class="navbar-text">Advertising</div>
+		<div class="navbar-text">Business</div>
+		<div class="navbar-text-long">How Search Works</div>
+		<div class="navbar-whitespace"></div>
+		<div class="navbar-text">Privacy</div>
+		<div class="navbar-text">Terms</div>
+		<div class="navbar-text">Settings</div>
+	</div>
+</body>
+
+</html>
